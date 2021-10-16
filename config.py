@@ -6,10 +6,10 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "7679313"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "8e6cf12591476e1c955e8c0a01812a1f")
 
 #Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
@@ -23,7 +23,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Halo {first} !\nSaya adalah bot untuk menyimpan file, dan akan bisa diakses melalui spesial link.")
+START_MSG = os.environ.get("START_MESSAGE", "Halo {first} !\nIni adalah bot yang digunakan untuk menyimpan file. Untuk mengakses setiap file, anda harus mengaksesnya melalui link file tersebut.")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
